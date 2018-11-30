@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JINGA LALA</title>
+</head>
+<body>
+<form action="/send/" method="post">
+    {% csrf_token %}
+    <table align="center" border="2">
+        <tr>
+            <td>
+               <input type="texts" name="t1" placeholder="username" required="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="password" name="t2" placeholder="password" required="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="login">
+            </td>
+        </tr>
+
+                <td>
+                    {{ message }}
+                </td>
+
+    </table>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AMAZON</title>
+</head>
+<body>
+<form action="/send/" method="post">
+    {% csrf_token %}
+    <table align="center" border="2">
+        <tr>
+            <th>
+                EMPLOYEE DETAILS
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" name="t1" placeholder="id"><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="t2" placeholder="name"><br>
+            </td>
+        </tr>
+         <tr>
+            <td>
+                <input type="number" name="t3" placeholder="salary"><br>
+            </td>
+        </tr>
+         <tr>
+            <td>
+                <input type="text" name="t4" placeholder="designation"><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="register">
+            </td>
+        </tr>
+        </table>
+</form>
+
+</body>
+</html>
